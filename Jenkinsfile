@@ -13,7 +13,8 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t trivikram97/capstone-img .'
+                    //sh 'docker build -t trivikram97/capstone-img .'
+                    ./build.sh
                 }
             }
         }
