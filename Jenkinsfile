@@ -14,7 +14,8 @@ pipeline {
             steps{
                 script{
                     //sh 'docker build -t trivikram97/capstone-img .'
-                    ./build.sh
+                    sh './build.sh' 
+
                 }
             }
         }
