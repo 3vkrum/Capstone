@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Checking out from github'
                 checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/3vkrum/Capstone']])
-                
+                echo "env.BRANCH_NAME"
             }
         }
         
