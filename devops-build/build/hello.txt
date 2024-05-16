@@ -1,1 +1,0 @@
-Hello World! This is to test jenkins auto trigger from github.
