@@ -1,2 +1,3 @@
 #Script to build docker images.
-docker build -t cpstone_img .
+#!/bin/bash
+docker build -t trivikram97/capstone-img .
