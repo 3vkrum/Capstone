@@ -14,6 +14,7 @@ pipeline {
             steps{
                 script{
                     //sh 'docker build -t trivikram97/capstone-img .'
+                    sh 'chmod +x build.sh'
                     sh './build.sh' 
 
                 }
