@@ -1,1 +1,1 @@
-docker build -t cpstn:latest .
+docker build -t cpstn_img .
