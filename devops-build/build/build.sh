@@ -1,2 +1,2 @@
-#Script to build docker images
-docker build -t cpstn_img .
+#Script to build docker images.
+docker build -t cpstone_img .
