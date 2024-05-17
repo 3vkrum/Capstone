@@ -24,12 +24,13 @@ pipeline {
         stage('Push image to Dockerhub') {
     steps {
         script {
-            sh 'docker tag trivikram97/capstone-img trivikram97/capstone-img:latest'
+            //sh 'docker tag trivikram97/capstone-img trivikram97/capstone-img:latest'
 
             if (env.GIT_BRANCH == 'origin/dev') {
                 sh 'docker tag trivikram97/capstone-img trivikram97/capstone-dev:latest'
                 sh 'docker login -u trivikram97 -p ThinkBig!##'
                 sh 'docker push trivikram97/capstone-dev:latest'
+            
             } else if (env.GIT_BRANCH == 'origin/main') {
                 sh 'docker tag trivikram97/capstone-img trivikram97/capstone-prod:latest'
                 sh 'docker login -u trivikram97 -p ThinkBig!##'
