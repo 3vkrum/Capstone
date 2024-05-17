@@ -12,5 +12,8 @@ sudo docker pull trivikram97/capstone-prod:latest
 echo "Docker images on EC2:"
 sudo docker images
 
+docker-compose up -d 
+
+
 EOF
 echo "Deployment completed!"
