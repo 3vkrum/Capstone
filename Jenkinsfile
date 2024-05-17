@@ -34,6 +34,7 @@ pipeline {
                 sh 'docker tag trivikram97/capstone-img trivikram97/capstone-prod:latest'
                 sh 'docker login -u trivikram97 -p ThinkBig!##'
                 sh 'docker push trivikram97/capstone-prod:latest'
+                sh 'chmod +x deploy.sh'
                 sh './deploy.sh'
                 
             } else {
