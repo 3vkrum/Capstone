@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Checking out from github'
                 checkout scmGit(branches: [[name: '*/dev']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/3vkrum/Capstone']])
-                echo env.BRANCH_NAME
+                echo env.GIT_BRANCH
             }
         }
         
@@ -21,7 +21,7 @@ pipeline {
             }
         }
         
-        stage('Push image to hub'){
+        stage('Push image to Dockerhub'){
             steps{
                 script{
                     sh 'docker tag trivikram97/capstone-img trivikram97/capstone-dev:latest'
