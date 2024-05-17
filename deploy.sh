@@ -1,8 +1,16 @@
 #!/bin/bash
+
 echo "Logging into EC2 instance"
-ssh -i /Users/trivikram/Developer/mumbai-kp1.pem  ubuntu@3.110.41.80
+ssh -i /Users/trivikram/Developer/mumbai-kp1.pem ubuntu@3.110.41.80 <<EOF
+
 echo "Logging into docker"
-docker login -u trivikram97 -p ThinkBig!##
+sudo docker login -u trivikram97 -p hdsfjk
+
 echo "Pulling image"
-docker pull trivikram97/capstone-prod:latest
-docker images
+sudo docker pull trivikram97/capstone-prod:latest
+
+echo "Docker images on EC2:"
+sudo docker images
+
+EOF
+echo "Deployment completed!"
