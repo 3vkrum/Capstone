@@ -5,3 +5,4 @@ echo "Logging into docker"
 docker login -u trivikram97 -p ThinkBig!##
 echo "Pulling image"
 docker pull trivikram97/capstone-prod:latest
+docker images
