@@ -12,7 +12,7 @@ sudo docker pull trivikram97/capstone-prod:latest
 echo "Docker images on EC2:"
 sudo docker images
 
-docker-compose up -d 
+docker run -d -p 8081:80 trivikram97/capstone-prod
 
 
 EOF
