@@ -4,7 +4,7 @@ echo "Logging into EC2 instance"
 ssh -i /Users/trivikram/Developer/mumbai-kp1.pem -o StrictHostKeyChecking=no ubuntu@35.154.225.120 <<EOF
 
 echo "Logging into docker"
-sudo docker login -u trivikram97 -p ThinkBig!##
+sudo docker login -u trivikram97 -p thH3GNDN45IkHMng
 
 echo "Pulling image"
 sudo docker pull trivikram97/capstone-prod:latest
