@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Logging into EC2 instance"
-ssh -i /Users/trivikram/Developer/mumbai-kp1.pem -o StrictHostKeyChecking=no ubuntu@15.206.149.58 <<EOF
+ssh -i /Users/trivikram/Developer/mumbai-kp1.pem -o StrictHostKeyChecking=no ubuntu@35.154.225.120 <<EOF
 
 echo "Logging into docker"
 sudo docker login -u trivikram97 -p ThinkBig!##
